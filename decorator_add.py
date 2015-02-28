@@ -1,11 +1,11 @@
 # Adds 5 to desired function
-def add5(function):
+def add_five(function):
     def wrapper(*args):
         return function(*args) + 5
     return wrapper
 
 
-@add5
+@add_five
 def multiply(num1, num2):
     return num1 * num2
 
